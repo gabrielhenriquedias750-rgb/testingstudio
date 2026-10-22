@@ -1,0 +1,121 @@
+/* Tema escuro simples. Os controles nativos seguem .streamlit/config.toml. */
+:root {
+  color-scheme: dark;
+  --background: #101214;
+  --surface: #191c20;
+  --border: #30353c;
+  --text: #e7e9ec;
+  --muted: #a1a8b2;
+  --accent: #5bbfba;
+}
+
+html, body, .stApp {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+h1, h2, h3 {
+  color: var(--text);
+  font-weight: 600 !important;
+  letter-spacing: -.025em;
+}
+
+h1 { font-size: 2rem !important; }
+h2 { font-size: 1.4rem !important; }
+h3 { font-size: 1.1rem !important; }
+
+.block-container {
+  max-width: 1120px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: .72rem;
+  letter-spacing: .04em;
+  margin-bottom: .35rem;
+}
+
+.eyebrow span {
+  padding-left: 1rem;
+  border-left: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.page-intro {
+  color: var(--muted);
+  font-size: .95rem;
+  margin-bottom: .5rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: .75rem;
+  font-weight: 400;
+  margin-top: .25rem;
+}
+
+[data-testid="stSidebar"] {
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+}
+
+[data-testid="stCaptionContainer"], [data-testid="stCaptionContainer"] p { color: var(--muted); }
+
+[data-testid="stTextArea"] textarea {
+  font-family: "Cascadia Code", Consolas, monospace !important;
+  font-size: .8rem !important;
+  line-height: 1.6 !important;
+}
+
+[data-testid="stBaseButton-primary"] {
+  min-height: 2.6rem;
+  font-weight: 600;
+  color: #101214;
+}
+
+[data-baseweb="tab-list"] {
+  gap: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+[data-baseweb="tab"] { font-size: .88rem; }
+
+[data-testid="stMetricValue"] { font-size: 1.65rem; }
+
+.method-card { margin-bottom: 1rem; }
+.method-tag { color: var(--muted); font-size: .75rem; }
+.method-card .formula {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: .4rem 0;
+}
+.method-card p:last-child { color: var(--muted); font-size: .9rem; }
+
+hr { border-color: var(--border); }
+
+button:focus-visible, a:focus-visible, [role="tab"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .block-container { padding: 3.5rem 1rem 1.5rem; }
+  h1 { font-size: 1.6rem !important; }
+  .eyebrow { flex-wrap: wrap; font-size: .65rem; }
+  [data-baseweb="tab-list"] { gap: .8rem; }
+  [data-baseweb="tab"] { font-size: .8rem; }
+}
