@@ -150,4 +150,5 @@ Referências técnicas: [SDK oficial Google Gen AI](https://googleapis.github.io
 
 O projeto usa um servidor Python para executar a aplicação Streamlit. Para hospedá-lo, utilize um ambiente com suporte a processos Python; hospedagem estática como GitHub Pages não executa esse servidor.
 #   t e s t i n g s t u d i o  
+ #   t e s t i n g s t u d i o  
  
